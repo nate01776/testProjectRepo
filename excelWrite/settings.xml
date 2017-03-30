@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="bf29097c-82c4-4da2-932d-fa9a160aaf0a" name="excelWrite" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="bf29097c-82c4-4da2-932d-fa9a160aaf0afileName">excelWrite</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties><con:property><con:name>count</con:name><con:value>D2</con:value></con:property></con:properties><con:reportParameters/></con:testSuite>

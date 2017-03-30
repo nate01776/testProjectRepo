@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="0149089e-0574-44fa-bc6e-a068bb4cfdc8" isOneWay="false" action="http://soap.amazon.com/CartCreate" name="CartCreate" bindingOperationName="CartCreate" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="0149089e-0574-44fa-bc6e-a068bb4cfdc8fileName">CartCreate</con:setting></con:settings><con:call id="2a53c75d-87c0-4a80-a423-bf74a62cac2c" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:CartCreate>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:ASIN>?</ns:ASIN>\r
+                  <!--Optional:-->\r
+                  <ns:OfferListingId>?</ns:OfferListingId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+                  <!--Optional:-->\r
+                  <ns:AssociateTag>?</ns:AssociateTag>\r
+                  <!--Optional:-->\r
+                  <ns:ListItemId>?</ns:ListItemId>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ns:MetaData>\r
+                     <!--Optional:-->\r
+                     <ns:Key>?</ns:Key>\r
+                     <!--Optional:-->\r
+                     <ns:Value>?</ns:Value>\r
+                  </ns:MetaData>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:ASIN>?</ns:ASIN>\r
+                  <!--Optional:-->\r
+                  <ns:OfferListingId>?</ns:OfferListingId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+                  <!--Optional:-->\r
+                  <ns:AssociateTag>?</ns:AssociateTag>\r
+                  <!--Optional:-->\r
+                  <ns:ListItemId>?</ns:ListItemId>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ns:MetaData>\r
+                     <!--Optional:-->\r
+                     <ns:Key>?</ns:Key>\r
+                     <!--Optional:-->\r
+                     <ns:Value>?</ns:Value>\r
+                  </ns:MetaData>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Request>\r
+      </ns:CartCreate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/CartCreate"/></con:call></con:operation>

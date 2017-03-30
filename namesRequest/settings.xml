@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="50a0254d-d5ff-49a2-b3e7-b5045fa5d469" name="namesRequest" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="50a0254d-d5ff-49a2-b3e7-b5045fa5d469fileName">namesRequest</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

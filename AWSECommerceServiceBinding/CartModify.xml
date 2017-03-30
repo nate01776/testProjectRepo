@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="67775961-f18c-452f-969f-8bf6eb15f70f" isOneWay="false" action="http://soap.amazon.com/CartModify" name="CartModify" bindingOperationName="CartModify" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="67775961-f18c-452f-969f-8bf6eb15f70ffileName">CartModify</con:setting></con:settings><con:call id="4468c214-4a27-422e-9d8f-d63ce52d60c9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:CartModify>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:CartId>?</ns:CartId>\r
+            <!--Optional:-->\r
+            <ns:HMAC>?</ns:HMAC>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:Action>?</ns:Action>\r
+                  <!--Optional:-->\r
+                  <ns:CartItemId>?</ns:CartItemId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:CartId>?</ns:CartId>\r
+            <!--Optional:-->\r
+            <ns:HMAC>?</ns:HMAC>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:Action>?</ns:Action>\r
+                  <!--Optional:-->\r
+                  <ns:CartItemId>?</ns:CartItemId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Request>\r
+      </ns:CartModify>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/CartModify"/></con:call></con:operation>

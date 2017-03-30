@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="36b658a1-2f5d-4965-abc0-fa03ca05a352" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CartCreate TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="36b658a1-2f5d-4965-abc0-fa03ca05a352fileName">CartCreate-TestCase</con:setting></con:settings><con:testStep type="request" id="850d7aaf-4d60-45d9-90ee-644e141b646a" name="CartCreate"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>AWSECommerceServiceBinding</con:interface><con:operation>CartCreate</con:operation><con:request name="CartCreate" id="06edad05-0dff-4b33-a305-e0b3912dae08"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:CartCreate>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:ASIN>?</ns:ASIN>\r
+                  <!--Optional:-->\r
+                  <ns:OfferListingId>?</ns:OfferListingId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+                  <!--Optional:-->\r
+                  <ns:AssociateTag>?</ns:AssociateTag>\r
+                  <!--Optional:-->\r
+                  <ns:ListItemId>?</ns:ListItemId>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ns:MetaData>\r
+                     <!--Optional:-->\r
+                     <ns:Key>?</ns:Key>\r
+                     <!--Optional:-->\r
+                     <ns:Value>?</ns:Value>\r
+                  </ns:MetaData>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Optional:-->\r
+            <ns:Items>\r
+               <!--Zero or more repetitions:-->\r
+               <ns:Item>\r
+                  <!--Optional:-->\r
+                  <ns:ASIN>?</ns:ASIN>\r
+                  <!--Optional:-->\r
+                  <ns:OfferListingId>?</ns:OfferListingId>\r
+                  <!--Optional:-->\r
+                  <ns:Quantity>?</ns:Quantity>\r
+                  <!--Optional:-->\r
+                  <ns:AssociateTag>?</ns:AssociateTag>\r
+                  <!--Optional:-->\r
+                  <ns:ListItemId>?</ns:ListItemId>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ns:MetaData>\r
+                     <!--Optional:-->\r
+                     <ns:Key>?</ns:Key>\r
+                     <!--Optional:-->\r
+                     <ns:Value>?</ns:Value>\r
+                  </ns:MetaData>\r
+               </ns:Item>\r
+            </ns:Items>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Request>\r
+      </ns:CartCreate>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://soap.amazon.com/CartCreate" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

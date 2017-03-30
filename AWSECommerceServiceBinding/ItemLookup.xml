@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="3483758c-248e-4955-bd3a-7cd4f6380856" isOneWay="false" action="http://soap.amazon.com/ItemLookup" name="ItemLookup" bindingOperationName="ItemLookup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3483758c-248e-4955-bd3a-7cd4f6380856fileName">ItemLookup</con:setting></con:settings><con:call id="5680974d-e7f2-41bd-b9b2-a8ed6500b1d3" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:ItemLookup>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:Condition>?</ns:Condition>\r
+            <!--Optional:-->\r
+            <ns:IdType>?</ns:IdType>\r
+            <!--Optional:-->\r
+            <ns:MerchantId>?</ns:MerchantId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ItemId>?</ns:ItemId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+            <!--Optional:-->\r
+            <ns:SearchIndex>?</ns:SearchIndex>\r
+            <!--Optional:-->\r
+            <ns:VariationPage>?</ns:VariationPage>\r
+            <!--Optional:-->\r
+            <ns:RelatedItemPage>?</ns:RelatedItemPage>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:RelationshipType>?</ns:RelationshipType>\r
+            <!--Optional:-->\r
+            <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>\r
+            <!--Optional:-->\r
+            <ns:TruncateReviewsAt>?</ns:TruncateReviewsAt>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:Condition>?</ns:Condition>\r
+            <!--Optional:-->\r
+            <ns:IdType>?</ns:IdType>\r
+            <!--Optional:-->\r
+            <ns:MerchantId>?</ns:MerchantId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ItemId>?</ns:ItemId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+            <!--Optional:-->\r
+            <ns:SearchIndex>?</ns:SearchIndex>\r
+            <!--Optional:-->\r
+            <ns:VariationPage>?</ns:VariationPage>\r
+            <!--Optional:-->\r
+            <ns:RelatedItemPage>?</ns:RelatedItemPage>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:RelationshipType>?</ns:RelationshipType>\r
+            <!--Optional:-->\r
+            <ns:IncludeReviewsSummary>?</ns:IncludeReviewsSummary>\r
+            <!--Optional:-->\r
+            <ns:TruncateReviewsAt>?</ns:TruncateReviewsAt>\r
+         </ns:Request>\r
+      </ns:ItemLookup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/ItemLookup"/></con:call></con:operation>

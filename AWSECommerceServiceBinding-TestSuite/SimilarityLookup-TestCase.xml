@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cd407d36-a591-436f-ba3d-d31be0557f95" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="SimilarityLookup TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="cd407d36-a591-436f-ba3d-d31be0557f95fileName">SimilarityLookup-TestCase</con:setting></con:settings><con:testStep type="request" id="d6c71215-f174-41cf-ab90-616945502171" name="SimilarityLookup"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>AWSECommerceServiceBinding</con:interface><con:operation>SimilarityLookup</con:operation><con:request name="SimilarityLookup" id="c0df7068-3370-4b48-b29f-763bbf8f91e4"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:SimilarityLookup>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:Condition>?</ns:Condition>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ItemId>?</ns:ItemId>\r
+            <!--Optional:-->\r
+            <ns:MerchantId>?</ns:MerchantId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+            <!--Optional:-->\r
+            <ns:SimilarityType>?</ns:SimilarityType>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:Condition>?</ns:Condition>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ItemId>?</ns:ItemId>\r
+            <!--Optional:-->\r
+            <ns:MerchantId>?</ns:MerchantId>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+            <!--Optional:-->\r
+            <ns:SimilarityType>?</ns:SimilarityType>\r
+         </ns:Request>\r
+      </ns:SimilarityLookup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://soap.amazon.com/SimilarityLookup" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="02bc7097-6230-4920-a82d-927e18c90c4d" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="BrowseNodeLookup TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="02bc7097-6230-4920-a82d-927e18c90c4dfileName">BrowseNodeLookup-TestCase</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:testStep type="request" id="d6b81af7-5e73-4aa1-a854-89250890cb44" name="BrowseNodeLookup"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>AWSECommerceServiceBinding</con:interface><con:operation>BrowseNodeLookup</con:operation><con:request name="BrowseNodeLookup" id="f168b932-d675-430f-a659-d8b26e7296cf"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+   <soapenv:Header/>
+   <soapenv:Body>
+      <ns:BrowseNodeLookup>
+         <!--Optional:-->
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>
+         <!--Optional:-->
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>
+         <!--Optional:-->
+         <ns:AssociateTag>?</ns:AssociateTag>
+         <!--Optional:-->
+         <ns:Validate>?</ns:Validate>
+         <!--Optional:-->
+         <ns:XMLEscaping>?</ns:XMLEscaping>
+         <!--Optional:-->
+         <ns:Shared>
+            <!--Zero or more repetitions:-->
+            <ns:BrowseNodeId>?</ns:BrowseNodeId>
+            <!--Zero or more repetitions:-->
+            <ns:ResponseGroup>?</ns:ResponseGroup>
+         </ns:Shared>
+         <!--Zero or more repetitions:-->
+         <ns:Request>
+            <!--Zero or more repetitions:-->
+            <ns:BrowseNodeId>?</ns:BrowseNodeId>
+            <!--Zero or more repetitions:-->
+            <ns:ResponseGroup>?</ns:ResponseGroup>
+         </ns:Request>
+      </ns:BrowseNodeLookup>
+   </soapenv:Body>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://soap.amazon.com/BrowseNodeLookup" mustUnderstand="NONE" version="200508"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>

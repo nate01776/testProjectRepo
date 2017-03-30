@@ -1,0 +1,9 @@
+BrowseNodeLookup-TestCase.xml
+CartAdd-TestCase.xml
+CartClear-TestCase.xml
+CartCreate-TestCase.xml
+CartGet-TestCase.xml
+CartModify-TestCase.xml
+ItemLookup-TestCase.xml
+ItemSearch-TestCase.xml
+SimilarityLookup-TestCase.xml

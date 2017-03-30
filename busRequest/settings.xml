@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="fdbd1c04-73e4-48d8-b289-4b198ab99a15" name="busRequest" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="fdbd1c04-73e4-48d8-b289-4b198ab99a15fileName">busRequest</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

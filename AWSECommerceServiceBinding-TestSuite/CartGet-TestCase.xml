@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="b818de25-33d8-433b-9436-1e520628712d" discardOkResults="true" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="CartGet TestCase" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b818de25-33d8-433b-9436-1e520628712dfileName">CartGet-TestCase</con:setting></con:settings><con:testStep type="request" id="90bd725a-5feb-4338-ac74-0034b4c4e0f6" name="CartGet"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>AWSECommerceServiceBinding</con:interface><con:operation>CartGet</con:operation><con:request name="CartGet" id="c153f351-f22c-445d-9efd-8bcbd839003b"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://webservices.amazon.ca/onca/soap?Service=AWSECommerceService</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ns:CartGet>\r
+         <!--Optional:-->\r
+         <ns:MarketplaceDomain>?</ns:MarketplaceDomain>\r
+         <!--Optional:-->\r
+         <ns:AWSAccessKeyId>?</ns:AWSAccessKeyId>\r
+         <!--Optional:-->\r
+         <ns:AssociateTag>?</ns:AssociateTag>\r
+         <!--Optional:-->\r
+         <ns:Validate>?</ns:Validate>\r
+         <!--Optional:-->\r
+         <ns:XMLEscaping>?</ns:XMLEscaping>\r
+         <!--Optional:-->\r
+         <ns:Shared>\r
+            <!--Optional:-->\r
+            <ns:CartId>?</ns:CartId>\r
+            <!--Optional:-->\r
+            <ns:HMAC>?</ns:HMAC>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Shared>\r
+         <!--Zero or more repetitions:-->\r
+         <ns:Request>\r
+            <!--Optional:-->\r
+            <ns:CartId>?</ns:CartId>\r
+            <!--Optional:-->\r
+            <ns:HMAC>?</ns:HMAC>\r
+            <!--Optional:-->\r
+            <ns:MergeCart>?</ns:MergeCart>\r
+            <!--Zero or more repetitions:-->\r
+            <ns:ResponseGroup>?</ns:ResponseGroup>\r
+         </ns:Request>\r
+      </ns:CartGet>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig action="http://soap.amazon.com/CartGet" mustUnderstand="NONE" version="200508"/></con:request></con:config></con:testStep><con:properties/><con:reportParameters/></con:testCase>
