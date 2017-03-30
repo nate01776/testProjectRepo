@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="fe3d4113-bf16-41b4-9c6e-d6dc980c3918" name="excelTestAndCheck" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="fe3d4113-bf16-41b4-9c6e-d6dc980c3918fileName">excelTestAndCheck</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
