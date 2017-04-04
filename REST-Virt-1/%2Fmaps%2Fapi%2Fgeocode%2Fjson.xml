@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/maps/api/geocode/json" method="GET" resourcePath="/maps/api/geocode/json" id="46d69738-8e89-46c5-9da8-36fc5a344e41" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="46d69738-8e89-46c5-9da8-36fc5a344e41fileName">%2Fmaps%2Fapi%2Fgeocode%2Fjson</con:setting></con:settings><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>PARAMETER</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:parameterDispatcherRuleContainer/><con:routeScript/><con:response name="Response 1" id="9c502491-9350-4cb7-a6af-e48bf613bb52" httpResponseStatus="200" mediaType="application/json" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent>{
+   "results" : [
+      {
+         "address_components" : [
+            {
+               "long_name" : "Boston",
+               "short_name" : "Boston",
+               "types" : [ "locality", "political" ]
+            },
+            {
+               "long_name" : "Suffolk County",
+               "short_name" : "Suffolk County",
+               "types" : [ "administrative_area_level_2", "political" ]
+            },
+            {
+               "long_name" : "Massachusetts",
+               "short_name" : "MA",
+               "types" : [ "administrative_area_level_1", "political" ]
+            },
+            {
+               "long_name" : "United States",
+               "short_name" : "US",
+               "types" : [ "country", "political" ]
+            }
+         ],
+         "formatted_address" : "Boston, MA, USA",
+         "geometry" : {
+            "bounds" : {
+               "northeast" : {
+                  "lat" : 42.40081989999999,
+                  "lng" : -70.749455
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            },
+            "location" : {
+               "lat" : 42.3600825,
+               "lng" : -71.0588801
+            },
+            "location_type" : "APPROXIMATE",
+            "viewport" : {
+               "northeast" : {
+                  "lat" : 42.3988669,
+                  "lng" : -70.9232011
+               },
+               "southwest" : {
+                  "lat" : 42.22788,
+                  "lng" : -71.191113
+               }
+            }
+         },
+         "place_id" : "ChIJGzE9DS1l44kRoOhiASS_fHg",
+         "types" : [ "locality", "political" ]
+      }
+   ],
+   "status" : "OK"
+}
+</con:responseContent><con:header><con:name>Server</con:name><con:value>mafe</con:value></con:header><con:header><con:name>Access-Control-Allow-Origin</con:name><con:value>*</con:value></con:header><con:header><con:name>Connection</con:name><con:value>keep-alive</con:value></con:header><con:header><con:name>Date</con:name><con:value>Tue, 04 Apr 2017 19:48:56 GMT</con:value></con:header><con:header><con:name>Accept-Ranges</con:name><con:value>none</con:value></con:header><con:header><con:name>X-Frame-Options</con:name><con:value>SAMEORIGIN</con:value></con:header><con:header><con:name>Cache-Control</con:name><con:value>public, max-age=86400</con:value></con:header><con:header><con:name>Expires</con:name><con:value>Wed, 05 Apr 2017 19:48:56 GMT</con:value></con:header><con:header><con:name>X-XSS-Protection</con:name><con:value>1; mode=block</con:value></con:header></con:response><con:response name="Response 2" id="747b6890-73b7-4335-8784-b6283a3d3aec" httpResponseStatus="200" dataSource=""><con:settings/><con:responseContent/></con:response></con:restMockAction>
