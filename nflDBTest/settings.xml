@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="e4034b07-40a5-4181-b501-493442a59c62" name="nflDBTest" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="e4034b07-40a5-4181-b501-493442a59c62fileName">nflDBTest</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
