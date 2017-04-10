@@ -7,6 +7,7 @@ AWSECommerceServiceBinding
 owlbotDictionary
 openWeather
 nflDB
+http%3A%2F%2Flocalhost%3A8081
 gBooksRequest
 namesRequest
 busRequest
@@ -15,4 +16,5 @@ AWSECommerceServiceBinding-TestSuite
 twilio-TestSuite
 excelTestAndCheck
 nflDBTest
-REST-Virt-1
+loadTestSuite
+userSearch

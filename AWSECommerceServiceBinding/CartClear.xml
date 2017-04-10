@@ -37,4 +37,4 @@
          </ns:Request>\r
       </ns:CartClear>\r
    </soapenv:Body>\r
-</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/CartClear"/></con:call></con:operation>
+</soapenv:Envelope>]]></con:request><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://soap.amazon.com/CartClear"/></con:call></con:operation>
