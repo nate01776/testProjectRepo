@@ -14,7 +14,7 @@ busRequest
 excelWrite
 AWSECommerceServiceBinding-TestSuite
 twilio-TestSuite
+loadTestSuite
 excelTestAndCheck
 nflDBTest
-loadTestSuite
 userSearch
