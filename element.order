@@ -17,4 +17,5 @@ twilio-TestSuite
 loadTestSuite
 excelTestAndCheck
 nflDBTest
+testAuthVirt-TestSuite
 userSearch
