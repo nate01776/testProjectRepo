@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="00168f39-496d-4dd0-87c0-ea37a8001c88" name="testAuthVirt TestSuite" xmlns:con="http://eviware.com/soapui/config"><con:description>TestSuite generated for REST Service [testAuthVirt]</con:description><con:settings><con:setting id="00168f39-496d-4dd0-87c0-ea37a8001c88fileName">testAuthVirt-TestSuite</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>

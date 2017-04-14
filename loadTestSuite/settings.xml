@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="defb6ddc-831e-442b-807c-63f3a9191c5c" name="loadTestSuite" xmlns:con="http://eviware.com/soapui/config"><con:description>TestSuite generated for REST Service [http://localhost:8081]</con:description><con:settings><con:setting id="defb6ddc-831e-442b-807c-63f3a9191c5cfileName">loadTestSuite</con:setting></con:settings><con:savedRecentRuns>1</con:savedRecentRuns><con:runType>SEQUENTIAL</con:runType><con:properties/><con:reportParameters/></con:testSuite>
