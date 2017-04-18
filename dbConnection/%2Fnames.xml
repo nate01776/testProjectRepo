@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/names" method="GET" resourcePath="/names" id="b27dc359-88f2-4104-bd9b-66a35b9e74e5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b27dc359-88f2-4104-bd9b-66a35b9e74e5fileName">%2Fnames</con:setting></con:settings><con:defaultResponse>error</con:defaultResponse><con:dispatchStyle>PARAMETER</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:parameterDispatcherRuleContainer><con:ParameterDispatcherRule><con:ruleName>Rule 1</con:ruleName><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>firstname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>lastname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:responseName>goodResponse</con:responseName></con:ParameterDispatcherRule></con:parameterDispatcherRuleContainer><con:routeScript/><con:response name="goodResponse" id="70d202b8-be0b-49a4-b52c-d55743884b7c" httpResponseStatus="200" dataSource="DataSource 1" mediaType="application/json"><con:settings/><con:script>def firstName = mockRequest.getHttpRequest().getParameter('firstname').toString();
+def lastName = mockRequest.getHttpRequest().getParameter('lastname').toString();
+
+context.setProperty('queryFirstName', firstName);
+context.setProperty('queryLastName', lastName);
+
+log.info(context.getProperty('queryFirstName'))
+log.info(context.getProperty('queryLastName'))</con:script><con:responseContent>{
+   "playerid": "${#MockResponse#players_id}",
+   "firstname": "${#MockService#queryFirstName}",
+   "lastname": "${#MockService#queryLastName}"
+}</con:responseContent></con:response><con:response name="error" id="f9e055a3-eaf5-42a5-b666-9cf17dda3657" httpResponseStatus="200" mediaType="application/json" dataSource=""><con:settings/><con:responseContent>{
+	"status": "404",
+	"message": "bad request"
+}</con:responseContent></con:response></con:restMockAction>

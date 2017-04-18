@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService port="8012" path="/" host="localhost" name="dbConnection" id="d9d3f0d7-5907-4b3b-9fcb-df4edd6c6886" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="d9d3f0d7-5907-4b3b-9fcb-df4edd6c6886fileName">dbConnection</con:setting></con:settings><con:properties><con:property><con:name>queryFirstName</con:name><con:value/></con:property><con:property><con:name>queryLastName</con:name><con:value/></con:property></con:properties><con:constraints><con:congestion>0</con:congestion><con:inputBandwidth>-1</con:inputBandwidth><con:outputBandwidth>-1</con:outputBandwidth><con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity><con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity><con:virtError><con:start>0</con:start><con:endless>true</con:endless></con:virtError></con:constraints><con:dataSources><con:dataSource><con:dataSource type="Data Connection"><con:configuration><Connection>nfl_db( Default environment )</Connection><query>Select players.id As players_id, players.first_name As players_firstname,
+  players.last_name As players_lastname
+From players
+Where players.first_name = :firstName And players.last_name =
+  :lastName
+
+</query><stored-procedure>false</stored-procedure></con:configuration></con:dataSource><con:name>DataSource 1</con:name><con:property>players_id</con:property><con:property>players_firstname</con:property><con:property>players_lastname</con:property><con:preparedProperties>&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="firstName" value=" ${#MockService#queryFirstName}"/>
+  &lt;con:entry key="lastName" value=" ${#MockService#queryLastName}"/>
+&lt;/xml-fragment></con:preparedProperties></con:dataSource></con:dataSources><con:headerValidator type="NONE"/></con:restMockService>
