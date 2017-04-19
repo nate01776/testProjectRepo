@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/names" method="GET" resourcePath="/names" id="b27dc359-88f2-4104-bd9b-66a35b9e74e5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b27dc359-88f2-4104-bd9b-66a35b9e74e5fileName">%2Fnames</con:setting></con:settings><con:defaultResponse>error</con:defaultResponse><con:dispatchStyle>PARAMETER</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath>//define request param variables
+<con:restMockAction name="/names" method="GET" resourcePath="/names" id="b27dc359-88f2-4104-bd9b-66a35b9e74e5" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="b27dc359-88f2-4104-bd9b-66a35b9e74e5fileName">%2Fnames</con:setting></con:settings><con:defaultResponse>error</con:defaultResponse><con:dispatchStyle>SCRIPT</con:dispatchStyle><con:dispatchConfig/><con:dispatchPath>//define request param variables
 def firstName = mockRequest.getHttpRequest().getParameter('firstname');
 def lastName = mockRequest.getHttpRequest().getParameter('lastname');
 
@@ -8,9 +8,6 @@ context.setProperty('queryFirstName', firstName);
 context.setProperty('queryLastName', lastName);
 
 //Validate custom property values
-log.info(context.getProperty('queryFirstName'))
-log.info(context.getProperty('queryLastName'))
-
 if (firstName != null &amp;&amp; lastName != null) {
 	return "goodResponse"
 } else {
@@ -71,13 +68,7 @@ if( requestBody.contains("some data") )
     return "Response N"
 }
 */
-</con:dispatchPath><con:dispatchXPath/><con:parameterDispatcherRuleContainer><con:ParameterDispatcherRule><con:ruleName>Rule 1</con:ruleName><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>firstname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>lastname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:responseName>goodResponse</con:responseName></con:ParameterDispatcherRule></con:parameterDispatcherRuleContainer><con:routeScript/><con:response name="goodResponse" id="70d202b8-be0b-49a4-b52c-d55743884b7c" httpResponseStatus="200" dataSource="DataSource 1" mediaType="application/json"><con:settings/><con:script>def firstName = mockRequest.getHttpRequest().getParameter('firstname').value.toString();
-def lastName = mockRequest.getHttpRequest().getParameter('lastname').value.toString();
-
-context.setProperty('queryFirstName', firstName);
-context.setProperty('queryLastName', lastName);
-
-log.info(context.getProperty('queryFirstName'))
+</con:dispatchPath><con:dispatchXPath/><con:parameterDispatcherRuleContainer><con:ParameterDispatcherRule><con:ruleName>Rule 1</con:ruleName><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>firstname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:parameterDispatcherCondition><con:parameterType>QUERY</con:parameterType><con:parameterOperationType>EXISTS</con:parameterOperationType><con:parameterName>lastname</con:parameterName><con:parameterValue/></con:parameterDispatcherCondition><con:responseName>goodResponse</con:responseName></con:ParameterDispatcherRule></con:parameterDispatcherRuleContainer><con:routeEnabled>true</con:routeEnabled><con:conditionalRoutingEnabled>true</con:conditionalRoutingEnabled><con:routeScript/><con:response name="goodResponse" id="70d202b8-be0b-49a4-b52c-d55743884b7c" httpResponseStatus="200" dataSource="DataSource 1" mediaType="application/json"><con:settings/><con:script>log.info(context.getProperty('queryFirstName'))
 log.info(context.getProperty('queryLastName'))</con:script><con:responseContent>{
    "playerid": "${#MockResponse#players_id}",
    "firstname": "${#MockResponse#players_firstname}",
