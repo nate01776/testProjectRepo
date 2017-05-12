@@ -875,7 +875,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
          <sessionid>${#MockResponse#sessionID}</sessionid>
       </sam:loginResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/login"/></con:response></con:mockOperation><con:mockOperation name="logout" id="57363ba7-b454-4c56-abcb-53be0950407f" interface="SOAP Service" operation="logout"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="18e88f4c-0a17-457d-b990-5bbba69ba6ba" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/login"/></con:response></con:mockOperation><con:mockOperation name="logout" id="57363ba7-b454-4c56-abcb-53be0950407f" interface="SOAP Service" operation="logout"><con:settings/><con:defaultResponse>Response 1</con:defaultResponse><con:dispatchStyle>SEQUENCE</con:dispatchStyle><con:dispatchConfig/><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="18e88f4c-0a17-457d-b990-5bbba69ba6ba" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:logoutResponse>
@@ -884,7 +884,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/logout"/></con:response></con:mockOperation><con:mockOperation name="search" id="b5c7526b-5a87-4bfa-85ee-ae5e3b1f1335" interface="SOAP Service" operation="search"><con:settings/><con:defaultResponse>invalid request</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>item 1</con:name><con:query>declare namespace sam='http://www.soapui.org/sample/';
 //sam:search[1]/searchstring[1]</con:query><con:match>Item 1</con:match><con:response>Response 1</con:response></con:query><con:query><con:name>item 2</con:name><con:query>declare namespace sam='http://www.soapui.org/sample/';
-//sam:search[1]/searchstring[1]</con:query><con:match>Item 2</con:match><con:response>Response 2</con:response></con:query></con:dispatchConfig><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="fb3e8d42-101d-41be-aa35-8f8448aaf6fc" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+//sam:search[1]/searchstring[1]</con:query><con:match>Item 2</con:match><con:response>Response 2</con:response></con:query></con:dispatchConfig><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="fb3e8d42-101d-41be-aa35-8f8448aaf6fc" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:searchResponse>
@@ -898,7 +898,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
          </sam:searchResponseContent>
       </sam:searchResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/search"/></con:response><con:response name="Response 2" id="e4557fba-02ff-4410-909d-4849a2b1d863" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/search"/></con:response><con:response name="Response 2" id="e4557fba-02ff-4410-909d-4849a2b1d863" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:searchResponse>
@@ -912,7 +912,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
          </sam:searchResponseContent>
       </sam:searchResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/search"/></con:response><con:response name="invalid request" id="7bfafaae-b20e-423b-9353-04252758b364" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/search"/></con:response><con:response name="invalid request" id="7bfafaae-b20e-423b-9353-04252758b364" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:searchResponse>
@@ -928,7 +928,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
    </soapenv:Body>
 </soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/search"/></con:response></con:mockOperation><con:mockOperation name="buy" id="9b2d9077-6b96-4627-9844-385c3fbcdf88" interface="SOAP Service" operation="buy"><con:settings/><con:defaultResponse>invalid request</con:defaultResponse><con:dispatchStyle>QUERY_MATCH</con:dispatchStyle><con:dispatchConfig xsi:type="con:MockOperationQueryMatchDispatch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:query><con:name>item 2</con:name><con:query>declare namespace sam='http://www.soapui.org/sample/';
 //sam:buy[1]/buystring[1]</con:query><con:match>Item 2</con:match><con:response>Response 2</con:response></con:query><con:query><con:name>item 1</con:name><con:query>declare namespace sam='http://www.soapui.org/sample/';
-//sam:buy[1]/buystring[1]</con:query><con:match>Item 1</con:match><con:response>Response 1</con:response></con:query></con:dispatchConfig><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="83b1cf6c-998b-45e8-a312-8a1d704234c7" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+//sam:buy[1]/buystring[1]</con:query><con:match>Item 1</con:match><con:response>Response 1</con:response></con:query></con:dispatchConfig><con:dispatchXPath/><con:routeScript/><con:response name="Response 1" id="83b1cf6c-998b-45e8-a312-8a1d704234c7" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:buyResponse>
@@ -942,7 +942,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
          </sam:buyResponseContent>
       </sam:buyResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/buy"/></con:response><con:response name="Response 2" id="7f7ee164-4970-4407-9aa4-5c1e31be2ad3" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/buy"/></con:response><con:response name="Response 2" id="7f7ee164-4970-4407-9aa4-5c1e31be2ad3" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:buyResponse>
@@ -956,7 +956,7 @@ exists( //sam:buyResponse/sam:buyResponseContent/purchasestatus)</path><content>
          </sam:buyResponseContent>
       </sam:buyResponse>
    </soapenv:Body>
-</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/buy"/></con:response><con:response name="invalid request" id="c000a91e-9509-4256-992d-f3558fb7e79f" httpResponseStatus="200" encoding="UTF-8"><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
+</soapenv:Envelope>]]></con:responseContent><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://www.soapui.org/sample/buy"/></con:response><con:response name="invalid request" id="c000a91e-9509-4256-992d-f3558fb7e79f" httpResponseStatus="200" encoding="UTF-8" dataSource=""><con:settings/><con:responseContent><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:sam="http://www.soapui.org/sample/">
    <soapenv:Header/>
    <soapenv:Body>
       <sam:buyResponse>
