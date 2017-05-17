@@ -23,7 +23,7 @@
   <con:entry key="TestCase" value="checkUSZip"/>
   <con:entry key="Username" value=""/>
   <con:entry key="user-settings.xml Password" value=""/>
-  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-1.9.0\bin"/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.0.0\bin"/>
   <con:entry key="Environment" value="Default environment"/>
   <con:entry key="Coverage Report" value="false"/>
   <con:entry key="Enable UI" value="false"/>
